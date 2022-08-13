@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 def register():
     print('=======REGISTRATION========')
     file=open('file.txt','a')
@@ -94,6 +88,3 @@ def home():
         print('invalid Entry')
 
 home()
-
-
-
