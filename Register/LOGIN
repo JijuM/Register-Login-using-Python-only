@@ -25,16 +25,10 @@ def register():
     special_chr=['!','@','#','$','%','&','*']
     if is_valid(password)==False:
         print('password must contain atleast one uppercase,lowercase,special character and a digit')
-    elif '@.' in username:
-        print('INVALID'+'\n'+'Enter a proper mail id')
-        register()
-    elif username[0] in special_chr or username[0].isdigit():
+    elif  username[0] in special_chr or username[0].isdigit():
         print('username doesnt start with number or special characters')
     elif username in m:
         print('user already registered')
-    elif '@.' in username:
-        print('INVALID'+'\n'+'Enter a proper mail id')
-        register()
     elif username[0] in special_chr or username[0].isdigit():
         print('username doesnt start with number or special characters')
     elif username in m:
@@ -80,7 +74,7 @@ def login():
                     print('your password is:'+d[username])
         else:
             print('username not registered,Please register')
-            register()      
+            register()
     except:
         print('login error')
     
