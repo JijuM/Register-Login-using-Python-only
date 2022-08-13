@@ -35,8 +35,6 @@ def register():
         print('username doesnt start with number or special characters')
     elif username in m:
         print('user already registered')
-    elif username[0] in special_chr or username[0].isdigit():
-        print('username doesnt start with number or special characters')
     elif username in m:
         print('already a user try to login')
     elif "@" not in username:
